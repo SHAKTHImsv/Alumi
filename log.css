@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* No change to global styles, keeping your styles intact */
+
+body {
+    background-color: rgb(38, 10, 61);
+    padding: 30px;
+    margin-top: 70px; /* Allow scrolling */
+    overflow-y: auto; 
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(38, 10, 61);
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-title{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    padding: 0 40px;
+}
+
+.nav-btn {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.nav-btn:hover {
+    background-color: orange;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow it to grow based on content */
+    flex-direction: column;
+    position: relative;
+    padding-top: 100px; /* Make space for eyes at the top */
+    overflow: visible; /* Ensure proper scrolling */
+}
+
+.eyes {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.eye1, .eye2 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+}
+
+.eye1 {
+    left: 10px;
+}
+
+.eye2 {
+    left: -40px;
+}
+
+.blackeye {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.sub {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5%;
+    border: 4px solid red;
+     /* Ensure space for the eyes at the top */
+    position: relative;
+    width: 50%;
+    margin-top: -10px; 
+    overflow-y: auto; /* Allow scrolling if form content overflows */
+}
+
+input {
+    margin: 10px 0;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    font-size: 15px;
+    color: white;
+}
+
+#image {
+    border: none;
+}
+
+.buttons {
+    padding: 20px;
+}
+
+#submit {
+    color: white;
+    background-color: green;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#reset {
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#selection {
+    border: none;
+    outline: none;
+}
+
+/* Make the student and alumni fields initially hidden */
+#studentFields,
+#alumniFields {
+    display: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .main {
+        padding-top: 50px;
+    }
+
+    .sub {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .eye1, .eye2 {
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        
+    }
+    .eye2{
+        left: -40px;
+    }
+    .eye1{
+        left: 0px;
+    }
+
+    .blackeye {
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (max-width: 468px) {
+    .main {
+        padding-top: 50px;
+    }
+    .main h1{
+        margin-bottom: 10px;
+    }
+    label{
+        display: block;
+        margin-top: 10px;
+    }
+    .sub {
+        width: 90%;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .eye1, .eye2 {
+        width: 40px;
+        height: 40px;
+        top: 0px;
+        
+    }
+    input{
+        width: 280px;
+    }
+    .eye2{
+        left: -40px;
+    }
+    .eye1{
+        left: 0px;
+    }
+
+    .blackeye {
+        width: 15px;
+        height: 15px;
+    }
+    
+}
+
+
+button  a{
+    color: white;
+    text-decoration: none;
+}
