@@ -215,6 +215,7 @@ input {
     }
     .navbar-title{
         font-size: 20px;
+        padding-right: 16px;
     }
     .navbar-links {
     display: flex;
