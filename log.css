@@ -205,8 +205,8 @@ input {
         margin-top: 10px;
     }
     .sub {
-        width: 90%;
-        padding: 20px;
+        width: 100%;
+        padding: 30px;
         border-radius: 10px;
     }
 
@@ -217,7 +217,7 @@ input {
         
     }
     input{
-        width: 280px;
+        width: 240px;
     }
     .eye2{
         left: -40px;
