@@ -174,25 +174,6 @@ input {
         width: 90%;
         padding: 20px;
     }
-    
-    .navbar {
-        
-        align-items: center;
-        padding: 10px;
-    }
-
-    .navbar-title {
-        font-size: 20px;
-        
-    }
-
-
-
-    .nav-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-
-    }
 
     .eye1, .eye2 {
         width: 40px;
