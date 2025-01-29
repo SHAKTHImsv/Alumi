@@ -183,7 +183,7 @@ input {
 
     .navbar-title {
         font-size: 20px;
-        text-align: center;
+        text-align: left;
     }
 
     .navbar-links {
@@ -193,7 +193,8 @@ input {
 
     .nav-btn {
         font-size: 14px;
-        padding: 8px 15px;
+        padding: 8px 12px;
+        margin-right:40px;
     }
 
     .eye1, .eye2 {
