@@ -176,25 +176,22 @@ input {
     }
     
     .navbar {
-        flex-direction: column;
+        
         align-items: center;
         padding: 10px;
     }
 
     .navbar-title {
         font-size: 20px;
-        text-align: left;
+        
     }
 
-    .navbar-links {
-        gap: 10px;
-        padding: 0;
-    }
+
 
     .nav-btn {
         font-size: 14px;
         padding: 8px 12px;
-        margin-right:40px;
+
     }
 
     .eye1, .eye2 {
